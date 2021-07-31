@@ -1,0 +1,362 @@
+/*
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Theme 1
+
+#### Backgrounds
+
+- Very dark desaturated blue (main background): hsl(222, 26%, 31%)
+- Very dark desaturated blue (toggle background, keypad background): hsl(223, 31%, 20%)
+- Very dark desaturated blue (screen background): hsl(224, 36%, 15%)
+
+#### Keys
+
+- Desaturated dark blue (key background): hsl(225, 21%, 49%)
+- Desaturated dark blue (key shadow): hsl(224, 28%, 35%)
+
+- Red (key background, toggle): hsl(6, 63%, 50%)
+- Dark red (key shadow): hsl(6, 70%, 34%)
+
+- Light grayish orange (key background): hsl(30, 25%, 89%)
+- Grayish orange (key shadow): hsl(28, 16%, 65%)
+
+#### Text
+
+- Very dark grayish blue: hsl(221, 14%, 31%)
+- White: hsl(0, 0, 100%)
+
+### Theme 2
+
+#### Backgrounds
+
+- Light gray (main background): hsl(0, 0%, 90%)
+- Grayish red (toggle background, keypad background): hsl(0, 5%, 81%)
+- Very light gray (screen background): hsl(0, 0%, 93%)
+
+#### Keys
+
+- Dark moderate cyan (key background): hsl(185, 42%, 37%)
+- Very dark cyan (key shadow): hsl(185, 58%, 25%)
+
+- Orange (key background, toggle): hsl(25, 98%, 40%)
+- Dark orange (key shadow): hsl(25, 99%, 27%)
+
+- Light grayish yellow (key background): hsl(45, 7%, 89%)
+- Dark grayish orange (key shadow): hsl(35, 11%, 61%)
+
+#### Text
+
+- Very dark grayish yellow: hsl(60, 10%, 19%)
+- White (text): hsl(0, 0, 100%)
+
+### Theme 3
+
+#### Backgrounds
+
+- Very dark violet (main background): hsl(268, 75%, 9%)
+- Very dark violet (toggle background, keypad background, screen background): hsl(268, 71%, 12%)
+
+#### Keys
+
+- Dark violet (key background): hsl(281, 89%, 26%)
+- Vivid magenta (key shadow): hsl(285, 91%, 52%)
+
+- Pure cyan (key background, toggle): hsl(176, 100%, 44%)
+- Soft cyan (key shadow): hsl(177, 92%, 70%)
+
+- Very dark violet (key background): hsl(268, 47%, 21%)
+- Dark magenta (key shadow): hsl(290, 70%, 36%)
+
+#### Text
+
+- Light yellow: hsl(52, 100%, 62%)
+- Very dark blue: hsl(198, 20%, 13%)
+- White (text): hsl(0, 0, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (numbers): 32px
+
+### Font
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 700
+
+
+*/
+:root{
+    /* font */
+    --main-font: 'Spartan', sans-serif;
+    /*font size*/
+    --num-font-size: 20px;
+    /* colors */
+
+
+    /* theme 1 */
+    /* #### Backgrounds */
+    /*(main background)*/
+    --very-dark-desaturated-blue-1: hsl(222, 26%, 31%);
+    /* (toggle background, keypad background) */
+    --very-dark-desaturated-blue-2: hsl(223, 31%, 20%);
+    /* (screen background) */
+    --very-dark-desaturated-blue-3: hsl(224, 36%, 15%);
+    /*#### Keys*/
+    /* (key background)*/
+    --desaturated-dark-blue-1: hsl(225, 21%, 49%);
+    /*(key shadow)*/
+    --desaturated-dark-blue-2: hsl(224, 28%, 35%);
+    /* (key background, toggle) */
+    --red: hsl(6, 63%, 50%);
+    /*(key shadow)*/
+    --dark-red: hsl(6, 70%, 34%);
+    /* (key background) */
+    --light-grayish-orange: hsl(30, 25%, 89%);
+    /*(key shadow)*/
+    --grayish-orange: hsl(28, 16%, 65%);
+    /*#### Text*/
+    --very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --white: hsl(0, 0, 100%);
+
+
+    /*theme2*/
+    /*#### Backgrounds*/
+    /*(main background)*/
+    --light-gray: hsl(0, 0%, 90%);
+    /*(toggle background, keypad background)*/
+    --grayish-red: hsl(0, 5%, 81%);
+    /*(screen background)*/
+    --very-light-gray : hsl(0, 0%, 93%);
+    /*#### Keys*/
+    /* (key background)*/
+    --dark-moderate-cyan: hsl(185, 42%, 37%);
+    /*(key shadow)*/
+    --very-dark-cyan: hsl(185, 58%, 25%);
+    /*(key background, toggle)*/
+    --orange: hsl(25, 98%, 40%);
+    /* (key shadow)*/
+    --dark-orange: hsl(25, 99%, 27%);
+    /* (key background)*/
+    --light-grayish-yellow: hsl(45, 7%, 89%);
+    /* (key shadow)*/
+    --dark-grayish-orange: hsl(35, 11%, 61%);
+    /*#### Text*/
+    --very-dark-grayish-yellow: hsl(60, 10%, 19%);
+
+
+    /*theme3*/
+    /*#### Backgrounds*/
+    /* (main background)*/
+    --very-dark-violet: hsl(268, 75%, 9%);
+    /*(toggle background, keypad background, screen background)*/
+    --very-dark-violet : hsl(268, 71%, 12%);
+    /*#### Keys*/
+    /*(key background)*/
+    --dark-violet : hsl(281, 89%, 26%);
+    /* (key shadow)*/
+    --vivid-magenta: hsl(285, 91%, 52%);
+    /*(key background, toggle)*/
+    --pure-cyan : hsl(176, 100%, 44%);
+    /*(key shadow)*/
+    --soft-cyan : hsl(177, 92%, 70%);
+    /*(key background)*/
+    --very-dark-violet : hsl(268, 47%, 21%);
+    /* (key shadow)*/
+    --dark-magenta: hsl(290, 70%, 36%);
+    /*#### Text*/
+    --light-yellow: hsl(52, 100%, 62%);
+    --very-dark-blue: hsl(198, 20%, 13%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--very-dark-desaturated-blue-1);
+}
+
+#calc-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#calc-container #header-theme{
+    font-family: var(--main-font);
+    color: var(--light-grayish-orange);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#calc-container #header-theme h3{
+    font-size: 25px;
+}
+
+#calc-container #header-theme #theme-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.5rem;
+}
+
+#calc-container #header-theme #theme-area #theme-buttons .color{
+    font-family: var(--main-font);
+    color: #fff;
+    border-width: 0;
+    background-color: var(--very-dark-desaturated-blue-1);
+    cursor: pointer;
+    padding: 0 0.2rem;
+}
+
+#calc-container #header-theme #theme-area #theme-buttons #theme-toggle{
+    width: 3.2rem;
+    height: 1rem;
+    border-radius: 0.6rem;
+    background-color: var(--very-dark-desaturated-blue-2);
+}
+
+#calc-container #header-theme #theme-area #theme-buttons #theme-toggle #mover{
+    border-radius: 50%;
+    background-color: var(--red);
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+#calc-container #calc-output{
+    background-color: var(--very-dark-desaturated-blue-3);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 0.8rem;
+    width: 100%;
+    min-height: 65px;
+    font-family: var(--main-font);
+    text-align: end;
+    border-radius: 0.6rem;
+    color: var(--light-grayish-orange);
+}
+
+#calc-container #calc-output h1{
+    font-size: 35px;
+}
+
+#calc-container #calc-input {
+    display: grid;
+    grid-template-areas: 
+    'seven eight nine del'
+    'four five six plus'
+    'one two three mins'
+    'dott zeroo div mul'
+    'reset reset eq eq';
+    grid-gap: 0.8rem;
+    background-color: var(--very-dark-desaturated-blue-2);
+    padding: 1.5rem;
+    margin-top: 0.8rem;
+    border-radius: 0.6rem;
+}
+
+#calc-container #calc-input .btns{
+    font-family: var(--main-font);
+    font-size: var(--num-font-size);
+    cursor: pointer;
+    border-radius: 0.6rem;
+    border-width: 0;
+    padding: 0.3rem 1rem;
+}
+
+.nums, #dot, .signs{
+    background-color: var(--light-grayish-orange);
+    color: var(--very-dark-grayish-blue);
+    border-bottom: 3px solid var(--grayish-orange);
+}
+
+#calc-container #calc-input .settings{
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: var(--desaturated-dark-blue-1);
+    color: white;
+    border-bottom: 3px solid var(--desaturated-dark-blue-2);
+}
+
+
+#calc-container #calc-input #eq{
+    background-color: var(--red);
+    color: white;
+    border-bottom: 3px solid var(--dark-red);
+}
+
+/* row 1 */
+#calc-container #calc-input #seven{
+    grid-area: seven;
+}
+#calc-container #calc-input #eight{
+    grid-area: eight;
+}
+#calc-container #calc-input #nine{
+    grid-area: nine;
+}
+#calc-container #calc-input #del{
+    grid-area: del;
+}
+/* row 2 */
+#calc-container #calc-input #four{
+    grid-area: four;
+} 
+#calc-container #calc-input #five{
+    grid-area: five;
+} 
+#calc-container #calc-input #six{
+    grid-area: six;
+} 
+#calc-container #calc-input #plus{
+    grid-area: plus;
+} 
+/* row 3 */
+#calc-container #calc-input #one{
+    grid-area: one;
+} 
+#calc-container #calc-input #two{
+    grid-area: two;
+} 
+#calc-container #calc-input #three{
+    grid-area: three;
+} 
+#calc-container #calc-input #mins{
+    grid-area: mins;
+} 
+/* row 4 */
+#calc-container #calc-input #dot{
+    grid-area: dott;
+} 
+#calc-container #calc-input #zero{
+    grid-area: zeroo;
+} 
+#calc-container #calc-input #div{
+    grid-area: div;
+} 
+#calc-container #calc-input #mul{
+    grid-area: mul;
+} 
+/* row 5 */
+#calc-container #calc-input #reset{
+    grid-area: reset;
+} 
+#calc-container #calc-input #eq{
+    grid-area: eq;
+} 

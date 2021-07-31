@@ -1,0 +1,75 @@
+const themeOne = document.getElementById("theme-1");
+const themeTwo = document.getElementById("theme-2");
+const themeThree = document.getElementById("theme-3");
+const circularMover = document.getElementById("mover");
+const toggleBackgrond = document.getElementById("theme-toggle");
+const calcOutput = document.getElementById("calc-output");
+const calcInput = document.getElementById("calc-input");
+const mainBody = document.querySelector("body");
+const head = document.querySelector("h3");
+const themeHead = document.querySelector("h6");
+const numbers = document.querySelectorAll(".nums");
+
+themeOne.addEventListener("click", () => {
+  circularMover.style.margin = "auto auto auto 0";
+  circularMover.style.backgroundColor = "var(--red)";
+  toggleBackgrond.style.backgroundColor = "hsl(223, 31%, 20%)";
+  mainBody.style.backgroundColor = "hsl(222, 26%, 31%)";
+  calcOutput.style.backgroundColor = "var(--very-dark-desaturated-blue-3)";
+  calcOutput.style.color = "var(--light-grayish-orange)";
+  calcInput.style.backgroundColor = "hsl(223, 31%, 20%)";
+  equalBtn.style.backgroundColor = "hsl(6, 63%, 50%)";
+  equalBtn.style.color = "#fff";
+  equalBtn.style.borderBottom = "3px solid var(--dark-red)";
+  resetBtn.style.backgroundColor = "hsl(225, 21%, 49%)";
+  resetBtn.style.color = "#fff";
+  resetBtn.style.borderBottom = "3px solid hsl(224, 28%, 35%)";
+  delBtn.style.backgroundColor = "hsl(225, 21%, 49%)";
+  delBtn.style.color = "#fff";
+  delBtn.style.borderBottom = "3px solid hsl(224, 28%, 35%)";
+  head.style.color = "#fff";
+  themeHead.style.color = "#fff";
+});
+
+themeTwo.addEventListener("click", () => {
+  circularMover.style.margin = "auto";
+  circularMover.style.backgroundColor = "hsl(25, 98%, 40%)";
+  toggleBackgrond.style.backgroundColor = "hsl(0, 5%, 81%)";
+  mainBody.style.backgroundColor = "hsl(0, 0%, 90%)";
+  calcOutput.style.backgroundColor = "var(--very-light-gray)";
+  calcOutput.style.color = "var(--very-dark-grayish-yellow)";
+  calcInput.style.backgroundColor = "hsl(0, 5%, 81%)";
+  equalBtn.style.backgroundColor = "hsl(25, 98%, 40%)";
+  equalBtn.style.color = "#fff";
+  equalBtn.style.borderBottom = "3px solid hsl(25, 99%, 27%)";
+  resetBtn.style.backgroundColor = "hsl(185, 42%, 37%)";
+  resetBtn.style.color = "#fff";
+  resetBtn.style.borderBottom = "3px solid hsl(185, 58%, 25%)";
+  delBtn.style.backgroundColor = "hsl(185, 42%, 37%)";
+  delBtn.style.color = "#fff";
+  delBtn.style.borderBottom = "3px solid hsl(185, 58%, 25%)";
+  head.style.color = "var(--very-dark-grayish-yellow)";
+  themeHead.style.color = "var(--very-dark-grayish-yellow)";
+});
+
+themeThree.addEventListener("click", () => {
+  circularMover.style.margin = "auto 0 auto auto";
+  circularMover.style.backgroundColor = "hsl(176, 100%, 44%)";
+  toggleBackgrond.style.backgroundColor = "hsl(268, 71%, 12%)";
+  mainBody.style.backgroundColor = "hsl(268, 75%, 9%)";
+  calcOutput.style.backgroundColor = "var(--very-dark-violet)";
+  calcOutput.style.color = "var(--light-yellow)";
+  calcInput.style.backgroundColor = "hsl(268, 71%, 12%)";
+  equalBtn.style.backgroundColor = "hsl(176, 100%, 44%)";
+  equalBtn.style.color = "hsl(198, 20%, 13%)";
+  equalBtn.style.borderBottom = "3px solid hsl(177, 92%, 70%)";
+  resetBtn.style.backgroundColor = "hsl(281, 89%, 26%)";
+  resetBtn.style.color = "#fff";
+  resetBtn.style.borderBottom = "3px solid hsl(285, 91%, 52%)";
+  delBtn.style.backgroundColor = "hsl(281, 89%, 26%)";
+  delBtn.style.color = "#fff";
+  delBtn.style.borderBottom = "3px solid hsl(285, 91%, 52%)";
+  head.style.color = "var(--light-yellow)";
+  themeHead.style.color = "var(--light-yellow)";
+  document.querySelectorAll(".nums").style.backgroundColor = "hsl(268, 47%, 21%)";
+});

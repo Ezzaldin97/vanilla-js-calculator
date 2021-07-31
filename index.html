@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel='stylesheet' href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div id='calc-container'>
+      <div id='header-theme'>
+        <h3>calc</h3>
+        <div id='theme-area'>
+          <h6 style="text-transform: uppercase;">theme</h6>
+          <div id="theme-buttons">
+            <button class="color" id="theme-1">1</button>
+            <button class="color" id="theme-2">2</button>
+            <button class="color" id="theme-3">3</button>
+            <div id="theme-toggle">
+              <div id="mover"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id='calc-output'>
+        <h1 id="display"></h1>
+      </div>
+      <div id='calc-input'>
+        <!-- row 1 -->
+        <button class='btns nums' id='seven' style='display: block' value='7'>7</button>
+        <button class='btns nums' id='eight' style='display: block' value='8'>8</button>
+        <button class='btns nums' id='nine' style='display: block' value='9'>9</button>
+        <button class='btns settings' id='del' style='display: block'>del</button>
+        <!-- row 2 -->
+        <button class='btns nums' id='four' style='display: block' value='4'>4</button>
+        <button class='btns nums' id='five' style='display: block' value='5'>5</button>
+        <button class='btns nums' id='six' style='display: block' value='6'>6</button>
+        <button class='btns signs' id='plus' style='display: block' value='+'>+</button>
+        <!-- row 3 -->
+        <button class='btns nums' id='one' style='display: block' value='1'>1</button>
+        <button class='btns nums' id='two' style='display: block' value='2'>2</button>
+        <button class='btns nums' id='three' style='display: block' value='3'>3</button>
+        <button class='btns signs' id='mins' style='display: block' value='-'>-</button>
+        <!-- row 4 -->
+        <button class='btns' id='dot' style='display: block' value='.'>.</button>
+        <button class='btns nums' id='zero' style='display: block' value='0'>0</button>
+        <button class='btns signs' id='div' style='display: block' value='/'>/</button>
+        <button class='btns signs' id='mul' style='display: block' value='*'>x</button>
+        <!-- row 5 -->
+        <button class='btns settings' id='reset' style='display: block'>reset</button>
+        <button class='btns' id='eq' style='display: block' value='='>=</button>
+      </div>
+    </div>
+    <script src='js/main.js'></script>
+    <script src='js/theme-changer.js'></script>
+  </body>
+</html>
